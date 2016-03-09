@@ -11,9 +11,9 @@ browsersync:
   xip:    true
 
 javascript:
-  dest: "assets/js/"
+  dest: "_site/assets/js/"
   dev:
-    dest: "_site/assets/js/"
+    dest: "assets/js/"
   # filename to output
   filename: "all.js"
   notification: "Running JavaScript"
@@ -87,9 +87,9 @@ sass:
   compatibility:
     - "last 2 versions"
     - "ie >= 9"
-  dest: "assets/css/"
+  dest: "_site/assets/css/"
   dev:
-    dest: "_site/assets/css/"
+    dest: "assets/css/"
   notification: "Running Sass"
   src: "assets/scss/*.scss"
 
