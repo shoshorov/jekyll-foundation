@@ -17,9 +17,9 @@ gulp.task('sass', function() {
     .pipe(autoprefixer(config.compatibility))
     .pipe(minifycss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    // for live injecting (for production builds we write the revised version)
-    .pipe($.if(!isProduction, gulp.dest(config.dev.dest)))
     // for future jekyll builds
+    .pipe($.if(!isProduction, gulp.dest(config.dev.dest)))
+    // for live injecting (for production builds we write the revised version)
     .pipe(gulp.dest(config.dest))
     //auto-inject styles into browsers
     .pipe(browserSync.stream());

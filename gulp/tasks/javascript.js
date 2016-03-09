@@ -17,8 +17,8 @@ gulp.task('javascript', function() {
     .pipe($.concat(config.filename))
     .pipe($.if(isProduction, $.uglify({ mangle: false })))
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    // for live injecting (for production builds we write the revised version)
-    .pipe($.if(!isProduction, gulp.dest(config.dev.dest)))
     // for future jekyll builds
+    .pipe($.if(!isProduction, gulp.dest(config.dev.dest)))
+    // for live injecting (for production builds we write the revised version)
     .pipe(gulp.dest(config.dest));
 });
