@@ -5,3 +5,17 @@ fields:
 - type: text
   name: layout
   label: layout
+- name: intro
+  type: text
+  config:
+    required: false
+  label: Intro
+- name: main_content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Main Content
