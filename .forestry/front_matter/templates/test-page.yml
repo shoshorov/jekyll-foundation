@@ -19,3 +19,5 @@ fields:
     schema:
       format: markdown
   label: Main Content
+pages:
+- test.md
