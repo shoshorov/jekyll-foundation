@@ -19,5 +19,12 @@ fields:
     schema:
       format: markdown
   label: Main Content
+- name: repeat
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Repeat
 pages:
 - test.md
