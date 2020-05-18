@@ -2,6 +2,9 @@
 layout: Layout
 intro: Intro text
 main_content: Main content
+repeat:
+- image: "/uploads/37346110_489047038204499_3702970912547536896_n.jpg"
+  name: Name One
 published: false
 
 ---
