@@ -21,6 +21,17 @@ fields:
   label: Main Content
 - name: repeat
   type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
   config:
     min: 
     max: 
